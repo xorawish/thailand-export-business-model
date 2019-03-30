@@ -1,0 +1,5 @@
+namespace th.exp.cargo
+
+asset Cargo identified by cargoId {
+  o String cargoId
+}

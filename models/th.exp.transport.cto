@@ -1,18 +1,19 @@
 namespace th.exp.transport
 
-import th.exp.product.Product
+import th.exp.cargo.Cargo
 
 concept Route {
   o String origin
   o String destination
   o DateTime schedule
-  --> Product product optional
+  --> Cargo cargo optional
 }
 
 asset Transport identified by transportId {
   o String transportId
   o String transportNumber
   o Route route
+  --> Cargo cargo optional
 }
 
 transaction CreateTransport {
@@ -25,4 +26,16 @@ transaction CreateTransport {
 event TransportCreated {
   o String transportId
 }
+
+transaction AssignCargo {
+  o String transportId
+  o String cargoId
+}
+
+event CargoAssigned {
+  o String transportId
+  o String cargoId
+}
+
+
 
