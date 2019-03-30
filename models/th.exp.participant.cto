@@ -5,18 +5,18 @@ concept Contact {
   o String last_name
   o String email
 }
-abstract participant expParticipant identified by participantKey {
+abstract participant ExpParticipant identified by participantKey {
   o String participantKey
   o Contact contract
 }
 
-participant expNetworkAdmin extends expParticipant {
+participant ExpNetworkAdmin extends ExpParticipant {
 }
 
-participant expPersonnel extends expParticipant {
+participant ExpPersonnel extends ExpParticipant {
   o String department
 }
 
-participant exporter extends expParticipant {
+participant Exporter extends ExpParticipant {
   o String exporterId
 }

@@ -15,3 +15,14 @@ asset Transport identified by transportId {
   o Route route
 }
 
+transaction CreateTransport {
+  o String transportNumber
+  o String origin
+  o String destination
+  o DateTime schedule
+}
+
+event TransportCreated {
+  o String transportId
+}
+
