@@ -11,6 +11,7 @@ concept Route {
 
 asset Transport identified by transportId {
   o String transportId
+  o String transportNumber
   o Route route
 }
 
