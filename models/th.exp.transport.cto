@@ -1,12 +1,15 @@
 namespace th.exp.transport
 
+import th.exp.product.Product
+
 concept Route {
   o String origin
   o String destination
   o DateTime schedule
+  --> Product product optional
 }
 
-asset transport identified by transportId {
+asset Transport identified by transportId {
   o String transportId
   o Route route
 }
