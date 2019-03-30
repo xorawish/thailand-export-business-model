@@ -1,0 +1,13 @@
+namespace th.exp.transport
+
+concept Route {
+  o String origin
+  o String destination
+  o DateTime schedule
+}
+
+asset transport identified by transportId {
+  o String transportId
+  o Route route
+}
+
