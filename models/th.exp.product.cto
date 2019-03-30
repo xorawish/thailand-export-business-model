@@ -1,1 +1,7 @@
 namespace th.exp.product
+
+asset Product identified by productId {
+  o String productId
+  o String productName
+  o Integer productValue
+}
