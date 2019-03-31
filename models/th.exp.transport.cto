@@ -6,7 +6,6 @@ concept Route {
   o String origin
   o String destination
   o DateTime schedule
-  --> Cargo cargo optional
 }
 
 asset Transport identified by transportId {

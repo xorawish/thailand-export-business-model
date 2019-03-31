@@ -1,0 +1,20 @@
+query AllTransports {
+  description: "Return all transports in registry"
+  statement: 
+    SELECT th.exp.transport.Transport
+}
+
+query AllTransportSkipLimit {
+  description: "Limit the number of transports returned"
+  statement: 
+    SELECT th.exp.transport.Transport
+    LIMIT _$limit
+    SKIP _$skip
+}
+
+query TransportOriginAndDestination {
+  description: "Return all transports in registry filter from origin and destination"
+  statement: 
+    SELECT th.exp.transport.Transport
+    WHERE (route.origin == _$origin_port AND route.destination == _$destination_port)
+}
