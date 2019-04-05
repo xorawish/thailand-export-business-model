@@ -5,6 +5,7 @@ concept Contact {
   o String last_name
   o String email
 }
+
 abstract participant ExpParticipant identified by participantKey {
   o String participantKey
   o Contact contract
