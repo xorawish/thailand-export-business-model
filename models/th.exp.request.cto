@@ -1,0 +1,21 @@
+namespace th.exp.request
+
+import th.exp.exporter.Exporter
+import th.exp.product.Product
+
+asset Request identified by requestId {
+  o String requestId
+  o DateTime requestDate
+  --> Exporter exporter
+  --> Product product
+  o String recieverName
+  o String recieverAddress
+  o String recieverContactNumber
+  o String buyerName optional
+  o String buyerAddress optional
+  o String buyerContactNumber optional
+  o DateTime exportDate
+  o String transportType
+  o String exportAddress
+  o String tradeEvidenceType
+}

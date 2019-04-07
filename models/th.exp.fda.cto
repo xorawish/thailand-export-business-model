@@ -1,0 +1,9 @@
+namespace th.exp.fda
+
+asset FDA identified by fdaId {
+  o String fdaId
+  o String manufacturer
+  o String sourceOfProduction
+  o String sourceOfProductionID
+  o String productType
+}

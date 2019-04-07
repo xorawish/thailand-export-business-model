@@ -1,7 +1,11 @@
 namespace th.exp.product
 
+import th.exp.fda.FDA
+
 asset Product identified by productId {
   o String productId
   o String productName
-  o Integer productValue
+  o Integer pricePerUnit
+  o Integer weight
+  --> FDA fda optional
 }

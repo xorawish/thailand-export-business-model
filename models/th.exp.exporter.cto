@@ -1,0 +1,10 @@
+namespace th.exp.exporter
+
+asset Exporter identified by TIN {
+  o String TIN // TIN = taxpayer identification number
+  o String juristicID
+  o String companyName
+  o String address
+  o String contactNumber
+}
+

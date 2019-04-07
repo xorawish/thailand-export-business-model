@@ -1,8 +1,5 @@
 namespace th.exp.cargo
 
-import th.exp.product.Product
-
 asset Cargo identified by cargoId {
   o String cargoId
-  --> Product product optional
 }
