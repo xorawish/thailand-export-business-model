@@ -1,0 +1,10 @@
+namespace th.exp.dft
+
+import th.exp.exporter.Exporter
+import th.exp.product.Product
+
+asset certificateOrigin identified by certificateOriginId {
+  o String certificateOriginId
+  -->Exporter exporter
+  -->Product product
+}

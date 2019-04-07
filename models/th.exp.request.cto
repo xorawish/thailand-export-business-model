@@ -8,9 +8,9 @@ asset Request identified by requestId {
   o DateTime requestDate
   --> Exporter exporter
   --> Product product
-  o String recieverName
-  o String recieverAddress
-  o String recieverContactNumber
+  o String receiverName
+  o String receiverAddress
+  o String receiverContactNumber
   o String buyerName optional
   o String buyerAddress optional
   o String buyerContactNumber optional
@@ -18,4 +18,6 @@ asset Request identified by requestId {
   o String transportType
   o String exportAddress
   o String tradeEvidenceType
+  o Integer pricePerUnit
+  o Integer weight
 }

@@ -1,9 +1,8 @@
 namespace th.exp.fda
 
+import th.exp.product.Product
+
 asset FDA identified by fdaId {
   o String fdaId
-  o String manufacturer
-  o String sourceOfProduction
-  o String sourceOfProductionID
-  o String productType
+  -->Product product
 }
