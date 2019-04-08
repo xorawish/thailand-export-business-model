@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper cyan darken-4">
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
+                    <i class="material-icons">menu</i>
+                </a>
+                <a href="home.html" class="brand-logo">&nbsp Trade Center</a>
+                <a href="track.html" class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+                    <i class="material-icons">add</i>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="https://ak9.picdn.net/shutterstock/videos/22276039/thumb/10.jpg">
+                </div>
+                <a href="#user">
+                    <img class="circle"
+                        src="https://cdn1.iconfinder.com/data/icons/flat-business-icons/128/user-512.png">
+                </a>
+                <a href="#name">
+                    <span class="white-text name">Sorawish Laovakul</span>
+                </a>
+                <a href="#email">
+                    <span class="white-text email">sorawish.l@ku.th</span>
+                </a>
+            </div>
+        </li>
+        <li>
+            <a class="waves-effect" href="home.html">History</a>
+        </li>
+        <li>
+            <a class="waves-effect" href="track.html">Track</a>
+        </li>
+        <li>
+            <a class="waves-effect" href="#support">Support</a>
+        </li>
+    </ul>
+
+    <div class="container row center" id="fdaCertificate" style="padding-top: 50pt;">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content black-text">
+                    <span class="card-title left">Food Export Registration</span>
+                    </br>
+                    </br>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field col s10 inline center">
+                                <input id="name" type="text" class="validate">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="input-field col s10 inline center">
+                                <input id="age" type="text" class="validate">
+                                <label for="age">Age</label>
+                            </div>
+                            <div class="input-field col s10 inline center">
+                                <input id="id" type="text" class="validate">
+                                <label for="id">ID card number</label>
+                            </div>
+                            <div class="input-field col s10 inline center">
+                                <input id="address" type="text" class="validate">
+                                <label for="address">Address</label>
+                            </div>
+                            <div class="input-field col s10 inline center">
+                                <input id="operator-name" type="text" class="validate">
+                                <label for="operator-name">Operator Name</label>
+                            </div>
+                            <div class="input-field col s10 inline center">
+                                <input id="operator-address" type="text" class="validate">
+                                <label for="operator-address">Operator Address</label>
+                            </div>
+                            <div class="input-field col s10 inline center">
+                                <input id="food-produce-lc" type="text" class="validate">
+                                <label for="food-produce-lc">Food produce license</label>
+                            </div>
+                            <div class="input-field col s10 inline center">
+                                <input id="food-name" type="text" class="validate">
+                                <label for="food-name">Food name</label>
+                            </div>
+                            <div class="input-field col s10 inline center">
+                                <textarea id="ingredients" class="materialize-textarea"></textarea>
+                                <label for="ingredients">Ingredients</label>
+                            </div>
+                            <div class="input-field col s10 inline center">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Register for the food recipie</span>
+                                </label>
+                            </div>
+                            <div class="input-field col s10 inline center">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Register to order the food</span>
+                                </label>
+                            </div>
+                            <div class="col s12">
+                                </br>
+                                </br>
+                            </div>
+                            <button class="col teal s3 btn waves-effect waves-light center" type="submit" name="action">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+        });
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+
+</html>
