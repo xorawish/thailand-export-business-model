@@ -36,5 +36,15 @@ event CargoAssigned {
   o String cargoId
 }
 
+transaction CloseBidding {
+  o String transanctionId
+  o String cargoId
+}
+
+event CloseBiddingTransported {
+  o String transanctionId
+  o String cargoId
+}
+
 
 
