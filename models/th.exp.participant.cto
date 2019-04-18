@@ -21,3 +21,7 @@ participant ExpPersonnel extends ExpParticipant {
 participant Exporter extends ExpParticipant {
   o String exporterId
 }
+
+participant FDA extends ExpParticipant {
+  
+}

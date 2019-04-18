@@ -27,3 +27,11 @@ rule NetworkAdminSystem {
     resource: "org.hyperledger.composer.system.**"
     action: ALLOW
 }
+
+rule FDA{
+  description: "Grand FDA to access to FDA part"
+  participant: "th.exp.participant.FDA"
+  operation: ALL
+  resource: "th.exp.fda.**"
+  action: ALLOW
+}
