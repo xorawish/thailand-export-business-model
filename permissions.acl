@@ -29,9 +29,41 @@ rule NetworkAdminSystem {
 }
 
 rule FDA{
-  description: "Grand FDA to access to FDA part"
+  description: "Grant FDA to access to FDA part"
   participant: "th.exp.participant.FDA"
   operation: ALL
   resource: "th.exp.fda.**"
+  action: ALLOW
+}
+
+rule FDAProduct{
+  description: "Grant FDA to access to Product part"
+  participant: "th.exp.participant.FDA"
+  operation: ALL
+  resource: "th.exp.product.**"
+  action: ALLOW
+}
+
+rule DFT{
+  description: "Grant DFT to access DFT part"
+  participant: "th.exp.participant.DFT"
+  operation: ALL
+  resource: "th.exp.dft.**"
+  action: ALLOW
+}
+
+rule DFTExporter{
+  description: "Grant DFT to access Exporter part"
+  participant: "th.exp.participant.DFT"
+  operation: ALL
+  resource: "th.exp.exporter.**"
+  action: ALLOW
+}
+
+rule DFTProduct{
+  description: "Grant FDA to access to Product part"
+  participant: "th.exp.participant.DFT"
+  operation: ALL
+  resource: "th.exp.product.**"
   action: ALLOW
 }
